@@ -1,0 +1,7 @@
+{
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
