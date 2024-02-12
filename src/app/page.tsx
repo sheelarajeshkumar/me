@@ -1,3 +1,5 @@
+import Experience from "@/components/Experience";
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
@@ -46,25 +48,34 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="p-6 text-start gap-6 flex flex-col">
+        <div className="p-6 text-start gap-6 flex flex-col w-4/6">
           <div>
             <p className="text-2xl font-bold uppercase">Career objective</p>
           </div>
 
           <div>
             <p className="text-2xl font-bold uppercase">Work Experience</p>
-            <div className="flex flex-col gap-3">
-              <span>Role</span>
-              <span>Company</span>
-              <div className="flex flex-row gap-20">
-                <span>from - to</span>
-                <span>Location</span>
-              </div>
-              <div className="flex flex-col gap-1">
-                <li> key take aways 1</li>
-                <li> key take aways 2</li>
-              </div>
-            </div>
+            <Experience
+              title={"Software Engineer III"}
+              company={"Fanatics"}
+              from="Jul 2021"
+              to="Current"
+              location="Hyderabad, Telangana"
+            />
+            <Experience
+              title={"Senior Application Developer"}
+              company={"Oracle India Private Limited"}
+              from="Oct 2018"
+              to="Jul 2021"
+              location="Hyderabad, Telangana"
+            />
+            <Experience
+              title={"Application Developer"}
+              company={"CA Technologies"}
+              from="Jun 2017"
+              to="Oct 2018"
+              location="Hyderabad, Telangana"
+            />
           </div>
         </div>
       </div>
