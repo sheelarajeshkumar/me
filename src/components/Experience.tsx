@@ -11,6 +11,7 @@ interface ExperienceProps {
   from: string;
   to: string;
   location: string;
+  keyTakeAways?: string[];
 }
 
 const Experience: React.FC<ExperienceProps> = ({
@@ -19,6 +20,7 @@ const Experience: React.FC<ExperienceProps> = ({
   from,
   to,
   location,
+  keyTakeAways,
 }) => {
   return (
     <div className="flex flex-col gap-2 py-4">
@@ -36,9 +38,14 @@ const Experience: React.FC<ExperienceProps> = ({
           {location}
         </span>
       </div>
-      <div className="flex flex-col gap-1 text-gray-500">
-        <li> key take aways 1</li>
-        <li> key take aways 2</li>
+      <div className="flex flex-col gap-1 text-gray-500 px-8">
+        <ul className="list-outside list-disc">
+          {keyTakeAways?.map((keyTakeAway, index) => (
+            <li className="capitalize" key={index}>
+              {keyTakeAway}
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );

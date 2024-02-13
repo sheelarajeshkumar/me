@@ -2,8 +2,8 @@ import Experience from "@/components/Experience";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="mb-32 flex flex-row text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:text-left bg-slate-100 w-screen h-screen text-black">
+    <main className="flex min-h-screen flex-col items-center justify-between px-24 py-10 h-screen">
+      <div className="mb-32 flex flex-row text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:text-left bg-slate-100 w-screen text-black">
         <div className="bg-slate-200 w-2/6">
           <div className="bg-gray-900 text-white p-6 flex flex-col gap-6">
             <span className="text-3xl uppercase">Rajesh Kumar Sheela</span>
@@ -48,9 +48,17 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="p-6 text-start gap-6 flex flex-col w-4/6">
+        <div className="p-6 text-start gap-4 flex flex-col w-4/6">
           <div>
             <p className="text-2xl font-bold uppercase">Career objective</p>
+          </div>
+          <div className="text-sm italic text-gray-700">
+            As a seasoned software developer, I bring a proven track record in
+            the tech industry, with expertise in Java, NodeJS, Golang, and
+            React. I hold a degree in engineering from Jawaharlal Nehru
+            Technological University, further solidifying my professional
+            foundation. I am eager to leverage my skills and experience to
+            contribute to innovative software solutions.
           </div>
 
           <div>
@@ -63,10 +71,24 @@ export default function Home() {
               location="Hyderabad, Telangana"
             />
             <Experience
-              title={"Senior Application Developer"}
+              title={"Senior Application Engineer"}
+              company={"Oracle India Private Limited"}
+              from="Jun 2021"
+              to="Jul 2021"
+              location="Hyderabad, Telangana"
+              keyTakeAways={[
+                "Developed a microservice to handle the customer data and integrated with the Oracle Cloud Infrastructure.",
+                "Full stack web developer involving in design and development of REST API services using java.",
+                "Design and development of Responsive web UI using Typescript, HTML5 and CSS.",
+                "Identifying, replicating and fixing web application security vulnerabilities. ",
+                "Designing and developing security layer APIs. ",
+              ]}
+            />
+            <Experience
+              title={"Application Engineer II"}
               company={"Oracle India Private Limited"}
               from="Oct 2018"
-              to="Jul 2021"
+              to="Jun 2021"
               location="Hyderabad, Telangana"
             />
             <Experience
@@ -75,7 +97,13 @@ export default function Home() {
               from="Jun 2017"
               to="Oct 2018"
               location="Hyderabad, Telangana"
+              keyTakeAways={[
+                "I've engaged in full-stack development, utilizing technologies such as HTML5, CSS3, JavaScript, Angular, and JAX-RS.",
+              ]}
             />
+          </div>
+          <div>
+            <p className="text-2xl font-bold uppercase">Projects</p>
           </div>
         </div>
       </div>
